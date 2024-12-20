@@ -63,7 +63,8 @@ const Home = () => {
   const renderTasks = () => (
     <ul className="w-full max-w-md space-y-2">
       {tasks.map((task, index) => (
-        <li key={index} className="flex flex-col justify-between items-start border rounded-md px-4 py-2 bg-white shadow-sm">
+        <li key={index} className="flex flex-col justify-between items-start border rounded-md 
+        px-4 py-2 bg-white shadow-sm">
           <div className="flex justify-between w-full items-center">
             <span className="text-gray-700">{task.text}</span>
             <div className="flex space-x-2">
@@ -88,7 +89,7 @@ const Home = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
+    <div className="flex flex-col items-center justify-center bg-gray-50 p-4">
       <header className="text-center mb-6">
         <h1 className="text-2xl font-bold text-gray-800">Task Tracker</h1>
       </header>

@@ -25,14 +25,14 @@ const SaveChange = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
+    <div className="flex flex-col items-center justify-center bg-gray-50 p-4">
       <h1 className="text-2xl font-bold mb-4">Edit Task</h1>
       <input
         type="text"
         value={updatedTask}
         onChange={(e) => setUpdatedTask(e.target.value)}
         placeholder="Update your task"
-        className="w-full max-w-md border rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        className="w-96 max-w-md border rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />
       <button
         onClick={handleSave}
